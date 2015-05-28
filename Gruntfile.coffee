@@ -27,6 +27,7 @@ module.exports = (grunt) ->
             'vendor/javascripts/backbone.wreqr.js'
             'vendor/javascripts/backbone.babysitter.js'
             'vendor/javascripts/backbone.marionette.js'
+            'vendor/javascripts/backbone.localStorage.js'
             'vendor/javascripts/bootstrap.js'
             'vendor/javascripts/handlebars.runtime.js'
             'vendor/javascripts/jquery-ui.js'

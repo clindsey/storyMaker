@@ -1,7 +1,7 @@
 PassageModel = require 'models/Passage'
 
 PassagesCollection = Backbone.Collection.extend
-  url: 'testData/passages.json'
+  localStorage: new Backbone.LocalStorage 'PassagesCollection'
   model: PassageModel
 
 module.exports = new PassagesCollection

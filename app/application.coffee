@@ -6,5 +6,6 @@ application.addRegions
 application.addInitializer ->
   require 'routers/home'
   require 'routers/story'
+  require 'routers/play'
 
 module.exports = application

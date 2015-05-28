@@ -1,1 +1,6 @@
-<a href="#/passages/{{id}}/">{{title}}</a>
+<div class="radio">
+  <label>
+    <input type="radio" name="mainPassage" id="mainSelect{{id}}" value="{{id}}" {{#if isMain}}checked{{/if}}>
+    <a href="#/story/{{storyId}}/passage/{{id}}/">{{title}}{{#if isMain}} (start){{/if}}</a>
+  </label>
+</div>

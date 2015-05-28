@@ -1,9 +1,25 @@
-DetailsView = Marionette.LayoutView.extend
+storiesCollection = require 'collections/stories'
+
+DetailsView = Marionette.ItemView.extend
   template: require('templates')(Handlebars)['app/templates/stories/details.hbs']
 
-  className: 'story-details-view'
+  ui:
+    title: '#storyDetailsTitle'
+    content: '#storyDetailsContent'
 
-  regions:
-    passagesListRegion: '#passages-list'
+  events:
+    'submit form': 'onFormSubmit'
+
+  initialize: (id) ->
+    @model = storiesCollection.get id
+
+  onFormSubmit: ($event) ->
+    $event.preventDefault()
+    title = @ui.title.val()
+    content = @ui.content.val()
+    @model.set {title, content}
+    @model.save()
+
+  className: 'story-details-view'
 
 module.exports = DetailsView

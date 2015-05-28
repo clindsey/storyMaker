@@ -1,7 +1,7 @@
 StoryModel = require 'models/Story'
 
 StoriesCollection = Backbone.Collection.extend
-  url: 'testData/stories.json'
+  localStorage: new Backbone.LocalStorage 'StoriesCollection'
   model: StoryModel
 
 module.exports = new StoriesCollection

@@ -1,4 +1,3 @@
-idGenerator = require 'idGenerator'
 StoryModel = require 'models/Story'
 storiesCollection = require 'collections/stories'
 
@@ -14,11 +13,10 @@ CreateView = Marionette.ItemView.extend
 
   onFormSubmit: ($event) ->
     $event.preventDefault()
-    model = new StoryModel
-      id: idGenerator.next()
+    storiesCollection.create {
       title: @ui.title.val()
       content: @ui.content.val()
-    storiesCollection.add model
+    }, {wait: true}
     @ui.title.val ''
     @ui.content.val ''
 
