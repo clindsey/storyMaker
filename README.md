@@ -1,6 +1,4 @@
-idlesync/pantheonCodex
-
-search through the marvel universe of characters, comics and creators
+clindsey/storyMaker
 
 ### install
 `make install` will install npm and bower dependencies
