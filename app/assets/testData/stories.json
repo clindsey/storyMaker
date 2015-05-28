@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0
+  , "title": "first story"
+  , "content": "alpha, lorem ipsum"
+  }
+, {
+    "id": 1
+  , "title": "second story"
+  , "content": "bravo, lorem ipsum"
+  }
+]

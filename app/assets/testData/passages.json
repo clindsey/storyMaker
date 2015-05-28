@@ -1,0 +1,58 @@
+[
+  {
+    "id": 0
+  , "storyId": 0
+  , "title": "first passage"
+  , "content": "There's a monster here! Will you fight it?"
+  , "links": [
+      {
+        "title": "fight the monster"
+      , "passageId": 1
+      }
+    , {
+        "title": "run away"
+      , "passageId": 2
+      }
+    ]
+  }
+, {
+    "id": 1
+  , "storyId": 0
+  , "title": "battle!"
+  , "content": "you killed the monster"
+  }
+, {
+    "id": 2
+  , "storyId": 0
+  , "title": "flee!"
+  , "content": "you safely ran away"
+  }
+, {
+    "id": 3
+  , "storyId": 1
+  , "title": "first passage"
+  , "content": "There's a monster here! Will you fight it?"
+  , "links": [
+      {
+        "title": "fight the monster"
+      , "passageId": 4
+      }
+    , {
+        "title": "run away"
+      , "passageId": 5
+      }
+    ]
+  }
+, {
+    "id": 4
+  , "storyId": 1
+  , "title": "battle!"
+  , "content": "you killed the monster"
+  }
+, {
+    "id": 5
+  , "storyId": 1
+  , "title": "flee!"
+  , "content": "you safely ran away"
+  }
+]
